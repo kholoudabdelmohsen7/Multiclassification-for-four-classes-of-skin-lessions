@@ -15,7 +15,7 @@
 This dataset consists of four classes: Monkeypox, Chickenpox, Measles, and Normal. All the image classes are collected from internet-based sources. The entire dataset has been developed by the Department of Computer Science and Engineering, Islamic University, Kushtia-7003, Bangladesh.
 - all the image in the dataset shape was (224,224,3)
 - the dataset is unbalanced, Measles and Chickenpox are considered minority classes so for the next step is Data Augmentation
-
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/b65047f8bf5f84d3f23c58acbf3ac3835f3aceff/unbalanced.png">
 
 # 2. Data Augmentation
 For the Geometric Transformations
