@@ -26,7 +26,8 @@ For the Geometric Transformations
 - fill mode we assigned it to reflect
 We applied this process to the minority classes chickenpox and Measles, where for each image in these two categories 3 augmented images were made and we assigned the maximum number for each category of images was 270 image per class
 While Monkeypox and Normal were not augmented
-before the augmentation we had 770 image after the augmentation we have 1114 image 
+before the augmentation we had 770 image after the augmentation we have 1114 image
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/bal.png">
 
 # 3.Data Preprocessing
  we made label encoding where: 
@@ -35,6 +36,9 @@ before the augmentation we had 770 image after the augmentation we have 1114 ima
  - 2 for Measles 
  - 3 for chickenpox
  Several image processing techniques were used to enhance the images. Sharpening was applied first but later discarded due to amplifying minor noises. Smoothing was avoided to retain important features. Adaptive histogram equalization (AHE) was applied only to the red channel in colored images to enhance the characteristic color, as applying AHE to all three channels amplified some noises. The next three images show the differences.
+the first image without any enhancement, the second image with AHE performed on
+RGB channels, the third image with AHE performed on red channel only
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/ahe.png" >
 
 # 4. Feature Extraction
 Two types of feature extraction are used on images after applying adaptive histogram
@@ -47,6 +51,7 @@ It involves a combination of GLCM, Colour Moment, and Local Binary Pattern:
 - Color Moment: Computes the color moments - mean, variance, skewness of each RGB channel. It changes an image to `float32` type and for every channel computes the mean, variance, and skewness then it combines them into one feature vector.
 
 - LBP: Extracts texture features from an image by first converting it to grayscale. The LBP is then calculated based on the specified number of pixels, neighbors, radius, and method (uniform). A histogram is calculated for the LBP and normalized such that the sum of the bins equals 1.
+for each image 24 features were extracted as a result of this combination
 
 ### Pytorch Feature Extractor
 using Img2Vec library which utilizes pre-trained deep learning models.it
@@ -80,7 +85,7 @@ Class 2 has precision (0.79)
 indicating it is less likely to
 correctly identify all
 instances of this class.
-
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/rf24.png">
 #### *Random Forest Classifier with Cross Validation with Pytorch features*
 The model achieves an
 accuracy of 90%, which is
@@ -94,7 +99,7 @@ Class 1 has precision (0.91).
 Class 3 has slightly lower
 precision (0.89).
 Class 2 has precision (0.88)
-
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/xg%20pytorch.png">
 ## XG Boost
 a powerful and fast supervised machine
 learning algorithm often used for tasks like classification, regression, and ranking. It is
@@ -105,10 +110,12 @@ models (typically decision trees) to create a stronger, more accurate model
 the model achieves overall accuracy 83%
 The model performs well on Class 1 and Class 0.
 Improvements are needed for Class 2 and Class 3, especially in precision and recall, to reduce false positives and false negatives.
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/xg24.png">
 
 #### *XG Boost with Cross Validation with Pytorch features*
 the model achieves overall accuracy 91%
-, the model performs well on class 0, 1 and 3 while it kind of struggeling with class 2. 
+, the model performs well on class 0, 1 and 3 while it kind of struggeling with class 2.
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/xg%20pytorch.png">
 
 
 
