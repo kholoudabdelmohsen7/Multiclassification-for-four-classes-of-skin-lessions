@@ -85,6 +85,7 @@ Class 2 has precision (0.79)
 indicating it is less likely to
 correctly identify all
 instances of this class.
+
 <img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/rf24.png">
 #### *Random Forest Classifier with Cross Validation with Pytorch features*
 The model achieves an
@@ -99,7 +100,8 @@ Class 1 has precision (0.91).
 Class 3 has slightly lower
 precision (0.89).
 Class 2 has precision (0.88)
-<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/xg%20pytorch.png">
+
+<img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/f70154f9e36eddd690524cd8cf5c9c740c7c6f2e/rf%20pytorch.png">
 ## XG Boost
 a powerful and fast supervised machine
 learning algorithm often used for tasks like classification, regression, and ranking. It is
@@ -110,11 +112,13 @@ models (typically decision trees) to create a stronger, more accurate model
 the model achieves overall accuracy 83%
 The model performs well on Class 1 and Class 0.
 Improvements are needed for Class 2 and Class 3, especially in precision and recall, to reduce false positives and false negatives.
+
 <img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/xg24.png">
 
 #### *XG Boost with Cross Validation with Pytorch features*
 the model achieves overall accuracy 91%
 , the model performs well on class 0, 1 and 3 while it kind of struggeling with class 2.
+
 <img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/xg%20pytorch.png">
 
 
