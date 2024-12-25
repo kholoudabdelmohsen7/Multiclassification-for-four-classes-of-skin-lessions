@@ -35,7 +35,8 @@ before the augmentation we had 770 image after the augmentation we have 1114 ima
  - 1 referred toMonkeypox
  - 2 for Measles 
  - 3 for chickenpox
- Several image processing techniques were used to enhance the images. Sharpening was applied first but later discarded due to amplifying minor noises. Smoothing was avoided to retain important features. Adaptive histogram equalization (AHE) was applied only to the red channel in colored images to enhance the characteristic color, as applying AHE to all three channels amplified some noises. The next three images show the differences.
+
+Several image processing techniques were used to enhance the images. Sharpening was applied first but later discarded due to amplifying minor noises. Smoothing was avoided to retain important features. Adaptive histogram equalization (AHE) was applied only to the red channel in colored images to enhance the characteristic color, as applying AHE to all three channels amplified some noises. The next three images show the differences.
 the first image without any enhancement, the second image with AHE performed on
 RGB channels, the third image with AHE performed on red channel only
 <img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/ahe.png" >
