@@ -88,6 +88,7 @@ correctly identify all
 instances of this class.
 
 <img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/00d98571bed881aebe56bbdc241918655c62f69c/rf24.png">
+
 #### *Random Forest Classifier with Cross Validation with Pytorch features*
 The model achieves an
 accuracy of 90%, which is
