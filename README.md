@@ -104,6 +104,7 @@ precision (0.89).
 Class 2 has precision (0.88)
 
 <img src="https://github.com/kholoudabdelmohsen7/Multiclassification-for-four-classes-of-skin-lessions/blob/f70154f9e36eddd690524cd8cf5c9c740c7c6f2e/rf%20pytorch.png">
+
 ## XG Boost
 a powerful and fast supervised machine
 learning algorithm often used for tasks like classification, regression, and ranking. It is
